@@ -1,0 +1,16 @@
+# The format of this file is documented in the dhcpd.leases(5) manual page.
+# This lease file was written by isc-dhcp-4.3.3
+
+server-duid "\000\001\000\001!h\333\356(\322D5\256\377";
+
+lease 172.16.6.150 {
+  starts 4 2017/10/05 12:04:09;
+  ends 4 2017/10/05 12:14:09;
+  cltt 4 2017/10/05 12:04:09;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 2c:41:38:59:6c:08;
+  uid "\001,A8Yl\010";
+  set vendor-class-identifier = "MSFT 5.0";
+}

@@ -1,0 +1,14 @@
+version: '2'
+services:
+
+  # ----------------------------------------------------------------------------
+  # PXE
+  pxe:
+    image: maxbelyanin/dhcp
+    container_name: dhcp
+    network_mode: host
+    restart: always
+    volumes:
+      - ./var/lib/dhcp:/var/lib/dhcp
+      - ./etc/dhcp/dhcpd.conf:/etc/dhcp/dhcpd.conf
+    command: enp3s0
