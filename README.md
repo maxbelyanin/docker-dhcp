@@ -31,12 +31,12 @@ services:
 ./
 |-- docker-compose.yml
 |-- var
-  |-- lib
-    |-- dhcp
-      |-- dhcpd.leases
+    |-- lib
+        |-- dhcp
+            |-- dhcpd.leases
 |-- etc
-  |-- dhcp
-    |-- dhcpd.conf
+    |-- dhcp
+        |-- dhcpd.conf
 ```
 
 ## Requirements
