@@ -1,9 +1,7 @@
 
-FROM ubuntu:xenial
+FROM alpine:3.6
 MAINTAINER Max Belyanin <maxbelyanin@gmail.com>
 
-RUN apt-get update \
- && apt-get install -y isc-dhcp-server \
- && rm -rf /var/lib/apt/lists/*
+RUN apk add --no-cache isc-dhcp-server
 
-ENTRYPOINT ["/usr/sbin/dhcpd", "-d", "--no-pid"]
+ENTRYPOINT ["dhcpd", "-d", "--no-pid"]
