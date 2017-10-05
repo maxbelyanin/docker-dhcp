@@ -3,7 +3,7 @@
 ## build
 
 ```console
-docker build -t maxbelyanin/dhcp .
+docker build -t dhcp .
 ```
 
 ## docker-compose example:
@@ -14,7 +14,7 @@ version: '2'
 services:
 
   dhcp:
-    image: maxbelyanin/dhcp
+    image: maxbelyanin/dhcp:ubuntu
     container_name: dhcp
     network_mode: host
     restart: always
