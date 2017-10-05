@@ -1,9 +1,7 @@
 version: '2'
 services:
 
-  # ----------------------------------------------------------------------------
-  # PXE
-  pxe:
+  dhcp:
     image: maxbelyanin/dhcp
     container_name: dhcp
     network_mode: host

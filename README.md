@@ -9,12 +9,11 @@ docker build -t maxbelyanin/dhcp .
 ## docker-compose example:
 
 ```yaml
+
 version: '2'
 services:
 
-  # ----------------------------------------------------------------------------
-  # PXE
-  pxe:
+  dhcp:
     image: maxbelyanin/dhcp
     container_name: dhcp
     network_mode: host
